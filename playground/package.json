@@ -1,0 +1,30 @@
+{
+  "name": "zuora-webtest",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint"
+  },
+  "dependencies": {
+    "@babel/preset-env": "^7.24.5",
+    "@babel/preset-react": "^7.24.1",
+    "@babel/preset-typescript": "^7.24.1",
+    "axios": "^1.6.8",
+    "next": "14.2.3",
+    "react": "^18.3.1",
+    "react-dom": "^18",
+    "zuora-pages2-client": "file:../src",
+    "zuora-v2-typescript": "github:NumberVerifier/zuora-v2-typescript"
+  },
+  "devDependencies": {
+    "@types/node": "^20",
+    "@types/react": "^18",
+    "@types/react-dom": "^18",
+    "eslint": "^8",
+    "eslint-config-next": "14.2.1",
+    "typescript": "^5"
+  }
+}

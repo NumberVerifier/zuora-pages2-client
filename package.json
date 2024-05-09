@@ -1,0 +1,34 @@
+{
+  "name": "zuora-pages2-client",
+  "version": "1.0.0",
+  "author": "",
+  "license": "MIT",
+  "description": "Typescript for Zuora Pages 2.0",
+  "repository": "https://github.com/NumberVerifier/zuora-pages2-client.git",
+  "homepage": "https://github.com/NumberVerifier/zuora-pages2-client",
+  "bugs": "https://github.com/NumberVerifier/zuora-pages2-client/issues",
+  "main": "src/index.ts",
+  "types": "src/index.ts",
+  "scripts": {
+    "lint": "eslint \"src/**/*.{ts,tsx}\"",
+    "build": "npm run clean && npm run build:core && husky install",
+    "build:core": "tsc",
+    "prettier": "prettier --write src",
+    "clean": "rimraf .nyc_output ./node_modules/.cache ./coverage ./esm ./cjs ./dist ./types"
+  },
+  "peerDependencies": {
+    "react": "^18.3.1"
+  },
+  "devDependencies": {
+    "@types/node": "^20.12.7",
+    "@types/react": "^18.3.1",
+    "@typescript-eslint/eslint-plugin": "^6.18.1",
+    "@typescript-eslint/parser": "^6.18.1",
+    "eslint": "^8.56.0",
+    "eslint-plugin-import": "^2.29.1",
+    "husky": "^9.0.11",
+    "prettier": "3.2.2",
+    "rimraf": "^5.0.5",
+    "typescript": "^5.4.5"
+  }
+}
